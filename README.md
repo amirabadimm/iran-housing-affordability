@@ -15,18 +15,18 @@ The large survey files are not included in this repository by default. The CPI w
 
 ```text
 .
-├─ notebooks/
-│  ├─ 00_prepare_master.ipynb
-│  └─ 01_housing_affordability_analysis.ipynb
-├─ data/
-│  └─ README.md
-├─ outputs/
-│  ├─ README.md
-│  └─ tables/
-├─ docs/
-│  └─ methodology.md
-├─ requirements.txt
-└─ README.md
+|-- notebooks/
+|   |-- 00_prepare_master.ipynb
+|   `-- 01_housing_affordability_analysis.ipynb
+|-- data/
+|   |-- README.md
+|   `-- cleaned/
+|       `-- CPI.xlsx
+|-- docs/
+|   `-- methodology.md
+|-- requirements.txt
+|-- LICENSE
+`-- README.md
 ```
 
 ## Reproduction
@@ -34,8 +34,8 @@ The large survey files are not included in this repository by default. The CPI w
 1. Download the cleaned yearly HBS files from D-Learn.
 2. Place the yearly CSV files in `data/cleaned/`.
 3. Confirm that `data/cleaned/CPI.xlsx` is present.
-4. Run `notebooks/00_prepare_master.ipynb`.
-5. Run `notebooks/01_housing_affordability_analysis.ipynb`.
+4. Run `notebooks/00_prepare_master.ipynb` to create `data/cleaned/master.csv`.
+5. Run `notebooks/01_housing_affordability_analysis.ipynb` to produce the analysis tables inside the notebook.
 
 The expected yearly files are:
 

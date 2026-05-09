@@ -10,9 +10,6 @@ data/raw/
 __pycache__/
 *.pyc
 
-# Generated outputs
-outputs/
-
 # Local environment
 .venv/
 venv/
