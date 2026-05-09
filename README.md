@@ -21,7 +21,8 @@ The large survey files are not included in this repository by default. The CPI w
 ├─ data/
 │  └─ README.md
 ├─ outputs/
-│  └─ README.md
+│  ├─ README.md
+│  └─ tables/
 ├─ docs/
 │  └─ methodology.md
 ├─ requirements.txt
@@ -35,6 +36,8 @@ The large survey files are not included in this repository by default. The CPI w
 3. Confirm that `data/cleaned/CPI.xlsx` is present.
 4. Run `notebooks/00_prepare_master.ipynb`.
 5. Run `notebooks/01_housing_affordability_analysis.ipynb`.
+
+The analysis notebook exports final tables to `outputs/tables/`. Generated CSV outputs are ignored by git by default because they can be recreated from the notebooks.
 
 The expected yearly files are:
 

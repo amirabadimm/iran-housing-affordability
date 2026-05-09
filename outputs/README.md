@@ -1,5 +1,5 @@
 # Outputs
 
-Use this folder for exported tables, figures, or presentation-ready files created from the notebooks.
+Notebook-generated files are written here.
 
-Generated outputs are ignored by git by default unless explicitly added.
+The analysis notebook exports final tables to `outputs/tables/` as CSV files. These CSV files are ignored by git by default because they are reproducible from the notebooks and source data. Commit selected final tables only if they are small, stable, and useful for review.
