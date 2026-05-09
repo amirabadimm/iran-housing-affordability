@@ -1,0 +1,20 @@
+# Local data
+data/cleaned/*.csv
+data/cleaned/*.xlsx
+!data/cleaned/CPI.xlsx
+data/cleaned/master.csv
+data/raw/
+
+# Notebook/runtime files
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Generated outputs
+outputs/*
+!outputs/README.md
+
+# Local environment
+.venv/
+venv/
+*.env
