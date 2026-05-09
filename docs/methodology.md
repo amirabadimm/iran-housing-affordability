@@ -37,4 +37,4 @@ Selected household expenditure shares are combined with category-specific annual
 
 Notebook `00_prepare_master.ipynb` builds the local `data/cleaned/master.csv` file from the cleaned yearly HBS files. Notebook `01_housing_affordability_analysis.ipynb` reads that master file and writes the final analysis tables to `outputs/tables/`.
 
-The generated master file, cleaned yearly HBS files, and output CSV tables are excluded from version control. They should be regenerated locally from the documented inputs. Committed notebooks should remain clean: markdown and code cells only, with no executed outputs or execution counts.
+The generated master file and cleaned yearly HBS files are excluded from version control. The lightweight output CSV tables are committed under `outputs/tables/` and can be regenerated locally from the documented inputs. Committed notebooks should remain clean: markdown and code cells only, with no executed outputs or execution counts.

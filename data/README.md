@@ -34,4 +34,4 @@ No additional rebasing is performed in the analysis notebooks. Nominal income an
 
 The notebooks create `data/cleaned/master.csv`. The generated master file is ignored by git because it is large and reproducible from the source files.
 
-The analysis notebook also writes generated CSV tables to `outputs/tables/`. Those output CSV files are local reproducible artifacts and should not be committed.
+The analysis notebook also writes generated CSV tables to `outputs/tables/`. Those table outputs are committed as lightweight reproducible results.

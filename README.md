@@ -40,7 +40,7 @@ The large survey files are not included in this repository by default. The CPI w
 4. Run `notebooks/00_prepare_master.ipynb` to create `data/cleaned/master.csv`.
 5. Run `notebooks/01_housing_affordability_analysis.ipynb` to produce the analysis tables.
 
-Generated analysis tables are written to `outputs/tables/` as CSV files. These CSV files are ignored by git because they are reproducible outputs; only the empty directory placeholder is tracked.
+Generated analysis tables are written to `outputs/tables/` as CSV files. The current table outputs are committed so readers can inspect the results without rerunning the full workflow.
 
 The expected yearly files are:
 
@@ -53,7 +53,7 @@ The included CPI workbook contains annual Persian-year observations from 1339 to
 
 ## Output and Version-Control Policy
 
-Large cleaned HBS files and generated files are not committed. Each user should download the cleaned yearly files, place them in `data/cleaned/`, run notebook `00`, and then run notebook `01` to recreate `master.csv` and the CSV tables under `outputs/tables/`.
+Large cleaned HBS files and `master.csv` are not committed. Each user should download the cleaned yearly files, place them in `data/cleaned/`, run notebook `00`, and then run notebook `01` to recreate `master.csv` and refresh the CSV tables under `outputs/tables/`.
 
 Before pushing changes, notebooks should contain only source cells and markdown. Do not commit executed code outputs, printed tables, plots, execution counts, or locally generated notebook artifacts. This keeps diffs readable and ensures the repository documents the workflow rather than one user's local run.
 
