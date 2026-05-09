@@ -32,3 +32,9 @@ Housing poverty is reported for urban renters using 30 percent and 40 percent th
 ## Inflation Exposure
 
 Selected household expenditure shares are combined with category-specific annual inflation rates for food, housing, transport, and health. The resulting measure approximates exposure to inflation through household budget composition.
+
+## Reproducible Outputs
+
+Notebook `00_prepare_master.ipynb` builds the local `data/cleaned/master.csv` file from the cleaned yearly HBS files. Notebook `01_housing_affordability_analysis.ipynb` reads that master file and writes the final analysis tables to `outputs/tables/`.
+
+The generated master file, cleaned yearly HBS files, and output CSV tables are excluded from version control. They should be regenerated locally from the documented inputs. Committed notebooks should remain clean: markdown and code cells only, with no executed outputs or execution counts.

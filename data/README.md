@@ -1,6 +1,6 @@
 # Data
 
-Place the cleaned input files in this folder before running the notebooks.
+Place the cleaned input files in this folder before running the notebooks. The large cleaned HBS files are intentionally not stored in git, so every user needs to download them locally before reproducing the analysis.
 
 Expected files:
 
@@ -33,3 +33,5 @@ The CPI workbook covers 1339-1403. Its metadata identifies World Bank/IMF as the
 No additional rebasing is performed in the analysis notebooks. Nominal income and housing-cost variables are deflated by dividing them by the CPI index available in this workbook.
 
 The notebooks create `data/cleaned/master.csv`. The generated master file is ignored by git because it is large and reproducible from the source files.
+
+The analysis notebook also writes generated CSV tables to `outputs/tables/`. Those output CSV files are local reproducible artifacts and should not be committed.

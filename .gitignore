@@ -5,8 +5,13 @@ data/cleaned/*.xlsx
 data/cleaned/master.csv
 data/raw/
 
+# Generated analysis outputs
+outputs/tables/*
+!outputs/tables/.gitkeep
+
 # Notebook/runtime files
 .ipynb_checkpoints/
+*.executed.ipynb
 __pycache__/
 *.pyc
 
