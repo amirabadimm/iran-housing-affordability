@@ -37,14 +37,6 @@ The large survey files are not included in this repository by default. The CPI w
 4. Run `notebooks/00_prepare_master.ipynb`.
 5. Run `notebooks/01_housing_affordability_analysis.ipynb`.
 
-The analysis notebook exports final tables to `outputs/tables/`. Generated CSV outputs are ignored by git by default because they can be recreated from the notebooks.
-
-If you are working from the original local project folder, the convenience script below copies the required CSV/XLSX files into the repo data folder:
-
-```powershell
-python scripts/copy_local_data.py
-```
-
 The expected yearly files are:
 
 ```text
