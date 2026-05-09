@@ -33,3 +33,5 @@ The CPI workbook covers 1339-1403. Its metadata identifies World Bank/IMF as the
 No additional rebasing is performed in the analysis notebooks. Nominal income and housing-cost variables are deflated by dividing them by the CPI index available in this workbook.
 
 The notebooks create `data/cleaned/master.csv`. The generated master file is ignored by git because it is large and reproducible from the source files.
+
+For local work on the original machine, `scripts/copy_local_data.py` can copy the required files from the previous working folder into `data/cleaned/`.
